@@ -1,0 +1,89 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  /* Estilo para tarjetas de productos */
+.product {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Imagen del producto */
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Estilo responsivo del carrito */
+@media (max-width: 480px) {
+    .cart {
+      font-size: 16px;
+    }
+  }
+  
+  /* Estilo personalizado para el botón 'Vaciar' */
+.btn-vaciar {
+    background-color: crimson;
+    color: white;
+    border: none;
+    padding: 6px 16px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+  }
+  
+.btn-vaciar:hover {
+    background-color: darkred;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  }
+  
+/* Botones principales de navegación (inicio) */
+.btn-home {
+  background-color: transparent;
+  color: rgb(29, 13, 16);
+  border: 2px solid rgb(48, 180, 15);
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  margin: 5px;
+}
+
+.btn-home:hover {
+  background-color: rgb(48, 180, 15);
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Estilo paara el blog */
+/* Estilo para fotos de perfil */
+.profile-photo-small {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-top-left-radius: calc(0.375rem - 1px);
+  border-top-right-radius: calc(0.375rem - 1px);
+}
+
+/* Personalización general */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

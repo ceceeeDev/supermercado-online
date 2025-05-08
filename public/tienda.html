@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda Online</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Encabezado de la tienda -->
+  <header class="bg-dark text-white py-3">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap text-center">
+      
+      <!-- Título convertido en enlace invisible -->
+      <h1 class="m-0">
+        <a href="index.html" class="text-white text-decoration-none">Nuestra Tienda Online</a>
+      </h1>
+
+      <!-- Carrito, botón ver carrito y vaciar -->
+      <div class="cart fs-5 mt-2 mt-md-0 d-flex align-items-center gap-2">
+        🛒 Carrito: <span id="cart-count">0</span>
+
+        <!-- Ver Carrito -->
+        <button class="btn btn-outline-light btn-sm" onclick="window.location.href='carrito.html'">
+          Ver Carrito
+        </button>
+
+        <!-- Vaciar Carrito -->
+        <button class="btn-vaciar btn-sm" onclick="vaciarCarrito()">🗑 Vaciar</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenedor dinámico para productos -->
+  <main class="container my-4">
+    <div class="row justify-content-center" id="product-list">
+      <!-- Los productos se insertarán dinámicamente aquí -->
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
